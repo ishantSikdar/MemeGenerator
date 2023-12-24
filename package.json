@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/app/" ,
+  "homepage": "https://ishantSikdar.github.io/MemeGenerator" ,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
