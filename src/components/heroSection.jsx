@@ -44,8 +44,8 @@ function heroSection() {
             <div className="mx-auto my-5 w-2/4">
                 <div className="w-full">
                     <div className="flex gap-5">
-                        <input className="border-black border-[1pt] outline-none h-12 p-2 w-1/2" type="text" name="topText" id="" placeholder="Enter text" onChange={handleChange} />
-                        <input className="border-black border-[1pt] outline-none h-12 p-2 w-1/2" type="text" name="bottomText" id="" placeholder="Enter text" onChange={handleChange} />
+                        <input className="border-black border-[1pt] outline-none h-12 p-2 w-1/2" type="text" name="topText" id="" placeholder="Top text" onChange={handleChange} />
+                        <input className="border-black border-[1pt] outline-none h-12 p-2 w-1/2" type="text" name="bottomText" id="" placeholder="Bottom text" onChange={handleChange} />
                     </div>
 
                     <div className="flex justify-center text-white font-bold text-xl ">
