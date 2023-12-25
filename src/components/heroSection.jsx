@@ -1,22 +1,21 @@
 import { useState, useEffect } from "react";
-import Memes from '../assets/memeData.js';
 
 function heroSection() {
 
-    const [meme, setMeme] = useState({
-        topText: "",
-        bottomText: "",
-        memeImage: "https://i.imgflip.com/30b1gx.jpg"
-    })
-
-    const [allMemeImages, setAllMemeImages] = useState(Memes);
-
+    const [allMemeImages, setAllMemeImages] = useState([]);
+    
+    
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
             .then(data => setAllMemeImages(data))
     }, [])
 
+    const [meme, setMeme] = useState({
+        topText: "",
+        bottomText: "",
+        memeImage: ""
+    })
 
     function getMemeImage() {
         const memesArray = allMemeImages.data.memes;
